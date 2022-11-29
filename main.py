@@ -41,7 +41,7 @@ class VKClient:
             "response_type": "token"
         }
 
-        print("Нажать ==>",'?'.join((self.URL_AUTH, urlencode(param))))
+        print("Нажать ==>",'?'.join((self.URL_AUTH, urlencode(param))))   # Строка запроса авторизации
 
 client = VKClient(TOKEN, "1")
 client.get_token()
