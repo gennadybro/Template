@@ -1,4 +1,4 @@
-import requests
+# import requests
 from pydantic import BaseModel
 from urllib.parse import urlparse, urlencode
 from my_token import TOKEN
@@ -18,8 +18,7 @@ class ScopeTypes(BaseModel):
     def scope(self):
         return ','.join(self.scope_list())
 
-APP_ID = 51489806
-
+APP_ID = 51503617
 
 class VKClient:
     URL_AUTH = "https://oauth.vk.com/authorize"
@@ -28,7 +27,7 @@ class VKClient:
     # SCOPE: str = ','.join(SCOPE_LIST)           --
     PROTOCOL_V: str = "5.131"
 
-    def __init__(self, token:str, user_id:str):
+    def __init__(self, token: str, user_id:str):
         self.token = token
         self.user_id = user_id
 
@@ -40,8 +39,7 @@ class VKClient:
             "scope": ScopeTypes().scope,
             "response_type": "token"
         }
-
-        print("Нажать ==>",'?'.join((self.URL_AUTH, urlencode(param))))   # Строка запроса авторизации
+        print("Нажать ==>", '?'.join((self.URL_AUTH, urlencode(param))))   # Строка запроса авторизации
 
 client = VKClient(TOKEN, "1")
 client.get_token()

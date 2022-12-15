@@ -1,4 +1,4 @@
 
 
 
-TOKEN = "327117802rlkjdfowqwerweqwpoip"
+TOKEN = "vk1.a.pOHrGkQaRsJaw_8qTiwRP2kaqoAG9rIkue2eRY5BRkbXXobylrP5QgAZzBGk5hIXSuvtmxf7wwyxGtPn7SCfdSfTuanrc5tHlshPjXEohiOnRF4F-KZksTniZfBXFm2kPHPo_oY-w6tAsgkcCaZnjkTAazj328C4eaTreycE4dQdYOQgT82vI5wE3sQihwunMOKEKeaKJJQgoB8OerYVzg&expires_in=86400"
